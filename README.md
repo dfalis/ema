@@ -1,4 +1,4 @@
-# ROP
+# EMA - Event music arrangement
 
 Old school project from 2018. First time trying to use microservices architecture.
 
