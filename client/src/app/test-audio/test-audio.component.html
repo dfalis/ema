@@ -1,0 +1,17 @@
+<div *ngIf="audios">
+	<mat-form-field style="margin-top: 25px;">
+		<mat-select placeholder="Pripojiť sa ako" name="connection" (selectionChange)="selectedChanged($event.value)">
+			<mat-option value="none">Nepripojiť</mat-option>
+			<mat-option value="server">Server</mat-option>
+			<mat-option value="client">Client</mat-option>
+		</mat-select>
+	</mat-form-field>
+	<p *ngFor="let audio of audios" [ngClass]="{'red': currentPlayingId == audio._id}">
+		{{formatSeconds(audio.duration)}} {{audio.originalname}}
+		<ng-container *ngIf="connType !== 'server'">
+			<button (click)="playSong(audio._id)">Play</button>
+			<button (click)="pauseSong()">Pause</button>
+		</ng-container>
+	</p>
+</div>
+

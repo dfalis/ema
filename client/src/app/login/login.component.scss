@@ -1,0 +1,26 @@
+.responsive-img {
+	max-height: 204px;
+}
+.background-static {
+	position: absolute;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-image: url('../../assets/img/back.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover, auto;
+	z-index: -100;
+
+	.alpha {
+		min-width: 100vw;
+		min-height: 100vh;
+		background-color: rgba(255, 255, 255, 0.3);
+		z-index: -99;
+	}
+}
+// .background-static .alpha {
+// 	min-width: 100vw;
+// 	min-height: 100vh;
+// 	background-color: rgba(255, 255, 255, 0.3);
+// 	z-index: -99;
+// }

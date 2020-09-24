@@ -1,0 +1,31 @@
+{
+	"name": "audioservice",
+	"version": "1.0.0",
+	"description": "Audio service for EMA",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://gitlab.com/Pipoo/rop.git"
+	},
+	"keywords": [
+		"EMA",
+		"AudioService"
+	],
+	"author": "Dominik Falis, Ľuboslav Piljan",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://gitlab.com/Pipoo/rop/issues"
+	},
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"jsonwebtoken": "^8.4.0",
+		"mongodb": "^3.1.13",
+		"mongoose": "^5.4.13",
+		"multer": "^1.4.1"
+	}
+}

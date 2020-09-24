@@ -1,0 +1,14 @@
+<form (submit)="register()">
+  
+  <input type="text" name="name" [(ngModel)]="credentials.name"/>
+  <label for="name">Meno</label>
+
+  <input type="email" class="validate" name="email" [(ngModel)]="credentials.email"/>
+  <label for="email" data-error="Neplatný email">E-mail</label>
+  
+  <input type="password" name="password" [(ngModel)]="credentials.password"/>
+  <label for="password">Heslo</label>
+
+  <button type="submit">Registrovať sa</button>
+
+</form>

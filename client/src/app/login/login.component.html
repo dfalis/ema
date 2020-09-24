@@ -1,0 +1,39 @@
+<div class="background-static">
+	<div class="alpha"></div>
+</div>
+<div>
+	<img class="responsive-img" alt="EMA Logo" src="assets/img/Logo.png"/>
+	<form (submit)="login()">
+		
+			<div class="input-field">
+				<input type="email" [class.invalid]="message && !credentials.email" name="email" [(ngModel)]="credentials.email" autocomplete="email"/>
+				<label for="email" data-error="Neplatný email">E-mail</label>
+			</div>
+
+		<div>
+			<div class="input-field">
+				<input type="password" [class.invalid]="message && !credentials.password" name="password" [(ngModel)]="credentials.password" autocomplete="current-password"/>
+				<label for="password">Heslo</label>
+			</div>
+		</div>
+		<div *ngIf="message">
+			<span style="color: red">{{ message }}</span>
+		</div>
+
+		<div>
+			<div>
+				<button type="submit">Prihlásiť sa</button>
+			</div>
+		</div>
+	</form>
+
+	<a routerLink="/register">Registrácia</a>
+
+	<!-- <div>
+		<a>Guest</a>
+	</div> -->
+	
+
+
+
+</div>
